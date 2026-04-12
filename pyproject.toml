@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=82.0.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mc-mod-utils"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+	"click>=8.3.2",
+	"typeguard>=4.5.1",
+	"typing_extensions>=4.15.0",
+]
+authors = [
+	{ name="Expertcoderz", email="expertcoderzx@gmail.com"},
+]
+description = "CLI tools for working with Minecraft mods and modpacks."
+readme = "README.rst"
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE"]
+classifiers = [
+	"Development Status :: 2 - Pre-Alpha",
+	"Environment :: Console",
+	"Intended Audience :: End Users/Desktop",
+	"Intended Audience :: System Administrators",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3.14",
+	"Programming Language :: Python :: 3 :: Only",
+	"Topic :: Games/Entertainment",
+]
+
+[project.urls]
+Homepage = "https://github.com/Expertcoderz/mc-mod-utils"
+Repository = "https://github.com/Expertcoderz/mc-mod-utils.git"
+Issues = "https://github.com/Expertcoderz/mc-mod-utils/issues"
+
+[project.scripts]
+mc-mod = "mc_mod_utils:mc_mod"
+mc-modpack = "mc_mod_utils:mc_modpack"
