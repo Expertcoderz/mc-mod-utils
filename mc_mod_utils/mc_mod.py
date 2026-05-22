@@ -45,7 +45,7 @@ def extract_modfile_data(
         )
 
 
-def iterate_modfiles(paths: Iterable[Path]) -> Iterable[Path]:
+def iterate_modfiles(paths: Iterable[Path]) -> Iterable[tuple[Path, FabricModfileData]]:
     for path in paths:
         if path.is_dir():
             yield from map(
